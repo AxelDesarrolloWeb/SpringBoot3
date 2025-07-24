@@ -32,7 +32,4 @@ public class Consulta {
 
     private LocalDateTime fecha;
 
-    // Asegúrate de tener este campo
-    private String motivoCancelamiento;
-
 }
