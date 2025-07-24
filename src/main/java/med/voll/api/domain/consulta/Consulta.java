@@ -1,6 +1,8 @@
 package med.voll.api.domain.consulta;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -32,4 +34,9 @@ public class Consulta {
 
     private LocalDateTime fecha;
 
+    // Asegúrate de tener este campo
+    private String motivoCancelamiento;
+
+    public Consulta(Object o, Medico medico, Paciente paciente, @NotNull @Future LocalDateTime fecha) {
+    }
 }
