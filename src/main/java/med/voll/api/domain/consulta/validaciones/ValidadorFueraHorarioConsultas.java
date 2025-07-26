@@ -17,5 +17,9 @@ public class ValidadorFueraHorarioConsultas implements ValidadorDeConsultas{
         if(domingo || horarioAntesDeAperturaClinica || horarioDespuesDeCierreClinica) {
             throw new ValidacionException("Horario selecionado fuera del horario de atendimiento de la clinica.");
         }
+
+        if (datos.fecha() == null) {
+            throw new ValidacionException("La fecha es requerida");
+        }
     }
 }

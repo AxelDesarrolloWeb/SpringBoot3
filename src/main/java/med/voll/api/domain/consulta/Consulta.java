@@ -37,6 +37,9 @@ public class Consulta {
     // Asegúrate de tener este campo
     private String motivoCancelamiento;
 
-    public Consulta(Object o, Medico medico, Paciente paciente, @NotNull @Future LocalDateTime fecha) {
+    // Constructor
+    public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime fecha) {
+        // ...
+        this.fecha = fecha;
     }
 }
