@@ -39,7 +39,8 @@ public class Consulta {
 
     // Constructor
     public Consulta(Long id, Medico medico, Paciente paciente, LocalDateTime fecha) {
-        // ...
+        this.medico = medico;
+        this.paciente = paciente;
         this.fecha = fecha;
     }
 }
